@@ -12,9 +12,9 @@ public class PTra02_07 {
 		System.out.println("num:" + num);
 
 		// ★ int型の変数targetを宣言して、97未満の数字を代入してください（値は任意です）
-
+		int target = 10;
 
 		// ★ 変数numを、変数targetの数字で割った商と余りを出力してください
-
+		System.out.println(num%target);
 	}
 }
