@@ -15,7 +15,7 @@ public class PTra03_08 {
 		System.out.println("1-3を選択してください");
 		System.out.println("------------------------------------------");
 		System.out.println("*　1.オレンジジュース	：150円");
-		System.out.println("*　2.リンゴジュース	：160円");
+		System.out.println("*　2.リンゴジュース		：160円");
 		System.out.println("*　3.コーヒー			：200円");
 		System.out.println("------------------------------------------");
 
@@ -34,21 +34,7 @@ public class PTra03_08 {
 		 * ●最後に所持金を表示してプログラム終了
 		 *
 		 * ※ プログラムは何行書いても良いです
-		 */switch(num) {
-		 case 1:
-			 System.out.println("1.オレンジジュース	：150円");
-			 System.out.println(money-150"円");
-			 break;
-		 case 2:
-			 System.out.println("2.リンゴジュース	：160円");
-			 break;
-		 case 3:
-			 System.out.println("3.コーヒー		：200円");
-		 default:
-			 System.out.println(" ");
-		 }
-
-
+		 */
 
 	}
 }
