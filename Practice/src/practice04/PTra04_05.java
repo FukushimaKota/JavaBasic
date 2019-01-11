@@ -44,23 +44,39 @@ public class PTra04_05 {
 			 *
 			 * ※ プログラムは何行書いても良いです
 			 */
+
 			if (cpuHand == 0) {
 				System.out.println("グー！");
-
-
+				if (myHand==0||myHand==1) {
+					System.out.println("もう一度");
+				}else {
+				 System.out.println("勝ち");
+				 break;
+				}
 
 			} else if (cpuHand == 1) {
 				System.out.println("チョキ！！");
+				if (myHand==1||myHand==2) {
+					System.out.println("もう一度");
+				}else {
+				 System.out.println("勝ち");
+				 break;
+				}
 
-
-
-			} else {
+			   } else {
 				System.out.println("パー！！");
-
-
+					if (myHand==0||myHand==2) {
+						System.out.println("もう一度");
+					}else {
+					 System.out.println("勝ち");
+					 break;
+					}
+				}
 
 			}
 
+
+
 		}
 	}
-}
+

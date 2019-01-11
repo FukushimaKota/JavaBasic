@@ -35,6 +35,25 @@ public class PTra03_08 {
 		 *
 		 * ※ プログラムは何行書いても良いです
 		 */
+		switch (num) {
+		case 1:
+		System.out.println("オレンジジュース	：150円");
+		System.out.println(money-150+"円");
+		break;
+
+		case 2:
+		System.out.println("2.リンゴジュース	：160円");
+		System.out.println(money-160+"円");
+		break;
+
+		case 3:
+		System.out.println("コーヒー		   ：200円");
+		System.out.println(money-200+"円");
+		break;
+
+		default:
+		System.out.println("1~3の数字を入力してください");
+		}
 
 	}
 }

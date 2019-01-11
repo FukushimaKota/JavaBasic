@@ -1,4 +1,5 @@
 package practice05;
+
 /*
  * PTra05_02.java
  *   作成	LIKEIT	2017
@@ -19,7 +20,7 @@ public class PTra05_02 {
 
 		// ★ 変数inputを宣言して、変数lineを数値に変換した値を代入してください
 		// ※ コマンドプロンプトで入力された値が、数字ではなかった場合はプログラムがエラーになって良いです
-
+		String input = line;
 
 		/*
 		 *  ★ 以下の仕様で、switch文を記述してください
@@ -29,6 +30,22 @@ public class PTra05_02 {
 		 *
 		 *  ※##は変数inputの中身
 		 */
+		 
+			switch(line) {
+			case :
+			System.out.println(input+"は偶数です");
+			break;
+			
+			default:
+			System.out.println(input+"奇数です");
+			}
+		
+			
+		}
+		
+		
+		
+		
 
 	}
 }
