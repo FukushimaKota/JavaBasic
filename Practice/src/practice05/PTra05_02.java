@@ -30,22 +30,21 @@ public class PTra05_02 {
 		 *
 		 *  ※##は変数inputの中身
 		 */
-		 
-			switch(line) {
-			case :
-			System.out.println(input+"は偶数です");
-			break;
-			
-			default:
-			System.out.println(input+"奇数です");
-			}
+		int n = Integer.parseInt(input);
 		
-			
+		switch(n) {
+		case 1 :
+		System.out.println(input+"は偶数です");
+		break;
+		
+		default:
+		System.out.println(input+"奇数です");
+		break;
+		
+		
+		
+		
+		//n%2==0をどこへ持っていくか。
 		}
-		
-		
-		
-		
-
 	}
 }

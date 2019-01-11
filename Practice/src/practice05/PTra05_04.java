@@ -27,32 +27,36 @@ public class PTra05_04 {
 
 		String line = scanner.nextLine();
 
-		switch(line) {
-			case "0":
+		int n = Integer.parseInt(line);
+
+		while(n==0&&n==6) {
+
+		switch(n) {
+			case 0:
 				System.out.println("日曜");
 				break;
-			case "1":
+			case 1:
 				System.out.println("月曜");
 				break;
-			case "2":
+			case 2:
 				System.out.println("火曜");
 				break;
-			case "3":
+			case 3:
 				System.out.println("水曜");
 				break;
-			case "4":
+			case 4:
 				System.out.println("木曜");
 				break;
-			case "5":
+			case 5:
 				System.out.println("金曜");
 				break;
-			case "6":
+			case 6:
 				System.out.println("土曜");
 				break;
 			default:
 				System.out.println("もう一度お願いします");
 				break;
-				
+			}
 		}
 	}
 }
