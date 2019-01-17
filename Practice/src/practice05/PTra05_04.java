@@ -23,13 +23,17 @@ public class PTra05_04 {
 		 */
 
 		// ①
+		boolean winFlg = false;
+
+		while(!winFlg) {
+
 		System.out.println("0～6の整数を入力してください");
 
 		String line = scanner.nextLine();
 
 		int n = Integer.parseInt(line);
 
-		while(n==0&&n==6) {
+		winFlg = true;
 
 		switch(n) {
 			case 0:
@@ -55,7 +59,7 @@ public class PTra05_04 {
 				break;
 			default:
 				System.out.println("もう一度お願いします");
-				break;
+				winFlg = false;
 			}
 		}
 	}

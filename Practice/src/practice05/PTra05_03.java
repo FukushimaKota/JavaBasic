@@ -43,22 +43,23 @@ public class PTra05_03 {
 			 */
 			int n = Integer.parseInt(line);
 
+
+
 			switch (n) {
 			case 1 :
-				System.out.println(mountain+"1");
-			break;
-
+				mountain++;
+				break;
 			case 2 :
-				System.out.println(river+"1");
+				river++;
 				break;
 
 			case 3 :
-				System.out.println(ocean+"1");
+				ocean++;
 				break;
 
 			default:
 				System.out.println("無効です");
-
+				break;
 			}
 
 
@@ -67,8 +68,10 @@ public class PTra05_03 {
 		}
 
 		// ★ 変数mountain、river、oceanの票数をそれぞれ出力してください
-		System.out.println(mountain);
-		System.out.println(river);
-		System.out.println(ocean);
+		System.out.println("山"+mountain+"票");
+		System.out.println("川"+river+"票");
+		System.out.println("海"+ocean+"票");
 	}
 }
+
+
