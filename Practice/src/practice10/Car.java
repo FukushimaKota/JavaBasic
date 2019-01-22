@@ -13,14 +13,21 @@ package practice10;
 * 			ガソリンが負の数になった場合（もう進めない）は-1を返します。
 */
 
-public class Car{
-	int serialNo;
-	String userNm;
-	String mail;
-	String password;
-	
-	public static int run; {
-		
-	}
+public class Car {
 
+	int serialNo;
+	String color;
+	int gasolin;
+
+	public int run() {
+
+		gasolin--;
+
+		if (gasolin >= 0) {
+			int n = new java.util.Random().nextInt(15) + 1;
+			return n;
+		} else {
+			return -1;
+		}
+	}
 }

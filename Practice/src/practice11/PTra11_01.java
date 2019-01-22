@@ -1,10 +1,4 @@
 package practice11;
-/*
- * PTra11_01.java
- *   作成	LIKEIT	2017
- *------------------------------------------------------------
- * Copyright(c) Rhizome Inc. All Rights Reserved.
- */
 
 public class PTra11_01 {
 	public static void main(String[] args) {
