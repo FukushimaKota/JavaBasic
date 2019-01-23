@@ -39,7 +39,7 @@ public class PTra10_05 {
 		car.gasolin=50;
 
 		// 目的地までの距離
-		final int distance = 400;
+		final int distance =300;
 
 		/*
 		 * ★ 変数carに格納されているインスタンスメソッドrunを使って、目的地まで進んでください
@@ -60,7 +60,7 @@ public class PTra10_05 {
 				break;
 			}
 
-			a=a+nn;
+			a=a+nn;//進んだ距離
 			System.out.println(a);
 			if(a>distance) {//aがdistanceを超える時
 				System.out.println("目的地にまで"+aa+"時間かかりました。残りのガソリンは、"+car.gasolin+"リットルです");
