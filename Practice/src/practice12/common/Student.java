@@ -33,8 +33,6 @@ public class Student {
 	private String password;
 
 
-
-
 	public int getstudentId() {
 		return studentId;
 	}
