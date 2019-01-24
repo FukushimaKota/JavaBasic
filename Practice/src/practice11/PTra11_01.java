@@ -12,8 +12,9 @@ public class PTra11_01 {
 		// 本の情報を出力します
 		System.out.println(book1.dispBookInfo());
 
-
-		System.out.println("");
+	}
+}
+		/*System.out.println("");
 
 		Book book2 = new Book(null, null, 0, 0, null);
 		book2.title = "スッキリわかるJava入門";
@@ -25,4 +26,4 @@ public class PTra11_01 {
 		// 本の情報を出力します
 		System.out.println(book2.dispBookInfo());
 	}
-}
+}*/
