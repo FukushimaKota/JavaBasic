@@ -28,7 +28,6 @@ public class PTra13_09 {
 														{"総務部","業務部","システム部"},
 														{"5","10","35"},
 													};
-
 	/**
 	 * エントリーポイント
 	 * @param args
@@ -36,9 +35,27 @@ public class PTra13_09 {
 	public static void main(String[] args) {
 
 		// ★ 定数で定義されている各データを使用して、Employeeインスタンスを３つ作成してください
-		Employee employee1 =new Employee(null,0);//String,int
-		Employee employee2 =new Employee(null, 0);
-		Employee employee3 =new Employee(null, 0);
+		Employee[] employees =new Employee[3];
+//配列＋インスタンス
+//繰り返し
+		for(int i=0;i<employees.length;i++) {
 
-	}
+			employees[i]=new Employee(null, i);
+
+			employees[i].setUserNm(NAMEDATA[i]);
+			employees[i].setMail(MAILDATA[i]);
+			employees[i].setPassword(PASSDATA[i]);
+			employees[i].setdepartmentNm(QUATERDATA[0][i]);
+			employees[i].setdepartmentCnt(Integer.parseInt(QUATERDATA[1][i]));//唯一の数字
+
+		}
+		for(int i=0;i<employees.length;i++) {
+		System.out.println(employees[i].getUserNm());
+		System.out.println(employees[i].getMail());
+		System.out.println(employees[i].getPassword());
+		System.out.println(employees[i].getdepartmentNm());
+		System.out.println(employees[i].getdepartmentCnt());
+		}
+		}
+
 }

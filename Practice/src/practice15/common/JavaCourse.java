@@ -19,5 +19,4 @@ public class JavaCourse implements Course {
 				,"高度な継承"
 		};
 	}
-
 }
