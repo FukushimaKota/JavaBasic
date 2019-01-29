@@ -7,8 +7,8 @@
 package practice15.ptra15;
 
 import practice15.common.Course;
-import practice15.common.DBCourse;//
-import practice15.common.JavaCourse;//
+import practice15.common.DBCourse;
+import practice15.common.JavaCourse;
 
 public class PTra15_01 {
 
@@ -24,4 +24,5 @@ public class PTra15_01 {
 			System.out.println(course.getCourseName());
 		}
 	}
+
 }
