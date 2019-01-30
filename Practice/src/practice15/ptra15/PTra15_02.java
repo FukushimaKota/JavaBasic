@@ -11,32 +11,17 @@ import practice15.common.Room;
 
 public class PTra15_02 {
 	public static void main(String[] args) {
-		
+
 		Room room = new Java2Month();
-		
+
 		// roomに格納されたJava2MonthインスタンスのgetCurriculumメソッドを呼び出してください
-
-		
+		String[] curriculum=((Java2Month) room).getCurriculum();//キャスト
 		// 取得したカリキュラム情報を全て出力してください
+		for (String course : curriculum){
+		System.out.println(course);
 
+		}
 	}
 }
 
-
-//Employee[] employees =new Employee[3];
-////配列＋インスタンス
-////繰り返し
-//		for(int i=0;i<employees.length;i++) {
-//
-//			employees[i]=new Employee(null, i);
-//
-//			employees[i].setUserNm(NAMEDATA[i]);
-//			employees[i].setMail(MAILDATA[i]);
-//			employees[i].setPassword(PASSDATA[i]);
-//			employees[i].setdepartmentNm(QUATERDATA[0][i]);
-//
-//		}
-//		for(int i=0;i<array.length;i++) {
-//		System.out.println(.array());
-//		}
-////		}
+//String[] getCurriculum()

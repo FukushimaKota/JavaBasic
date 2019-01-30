@@ -11,10 +11,24 @@ public class PTra17_04 {
 
 		String str = "スッキリわかるJava入門";
 
+		dispMessageSlowly(str,100) ;
+	}
 		/*
 		 * ★ strに入っている文字列を1文字ずつゆっくり表示させるプログラムを完成させてください
 		 * ※ Thread.sleep を使用すること
 		 */
+		public static void dispMessageSlowly(String message, long millisecond) {//メソッド引数
+
+			char[] n=message.toCharArray();//arrayにmessage
+
+			for(int i=0;i<message.length();i++) {
+				System.out.print(n[i]);
+				try {
+					Thread.sleep(millisecond);
+				}catch(InterruptedException e) {
+					System.out.print("Errorです");
+				}
+		}
 
 	}
 }
