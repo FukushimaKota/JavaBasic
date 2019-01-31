@@ -11,13 +11,13 @@ public class PTra17_04 {
 
 		String str = "スッキリわかるJava入門";
 
-		dispMessageSlowly(str,100) ;
+		slow(str,100) ;
 	}
 		/*
 		 * ★ strに入っている文字列を1文字ずつゆっくり表示させるプログラムを完成させてください
 		 * ※ Thread.sleep を使用すること
 		 */
-		public static void dispMessageSlowly(String message, long millisecond) {//メソッド引数
+	public static void slow(String message, long millisecond) {//メソッド引数
 
 			char[] n=message.toCharArray();//arrayにmessage
 

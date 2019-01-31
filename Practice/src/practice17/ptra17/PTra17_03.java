@@ -17,11 +17,10 @@ public class PTra17_03 {
 
 	public static void quiz() {
 		final String[] question = {
-				 "Javaの予約語となっている単語は次のうちどれか。\n1:static\t2:Sample\t3:java"
-				,"次の中からMicrosoftの製品はどれか。\n1:GitHub\t2:サクラエディタ\t3:SQL Server"
-				,"Javaが誕生した年は？（西暦で答えなさい）"
+				"Javaの予約語となっている単語は次のうちどれか。\n1:static\t2:Sample\t3:java",
+				"次の中からMicrosoftの製品はどれか。\n1:GitHub\t2:サクラエディタ\t3:SQL Server", "Javaが誕生した年は？（西暦で答えなさい）"
 		};
-		final int[] answer = {1, 3, 1995};
+		final int[] answer = { 1, 3, 1995 };
 
 		int score = 0;
 
@@ -35,48 +34,37 @@ public class PTra17_03 {
 		 * から再度入力を求めるような形に仕様変更してください。
 		 *
 		 */
-		
 
-			for (int i = 0; i < question.length; i++) {
+		for (int i = 0; i < question.length; i++) {//3問終わるまで。
 
+			while (true) {//正しくなるまで。
 				System.out.println("問題：" + (i + 1));
 				System.out.println(question[i]);
-while(true) {
+
 				try {//errorが出る範囲で囲えば良い
-				System.out.println("回答を数字で入力してください");
-				String input = ThrowExceptionUtil.inputValue();
 
-				int num = Integer.parseInt(input);
+					System.out.println("回答を数字で入力してください");
+					String input = ThrowExceptionUtil.inputValue();//文字の時Error
 
-				if (answer[i] == num) {
-					score++;
+					int num = Integer.parseInt(input);
+
+					if (answer[i] == num) {
+						score++;
+
+					}break;//ここで止める
+					
+
+				} catch (IOException e) {//Error時の処理
+					System.out.println("例外が発生しました");
+				} catch (NumberFormatException e) {
+					System.out.println("数字以外が入力されました");
 
 				}
-			
-		} catch(IOException e) {
-			System.out.println("例外が発生しました");
-		} catch(NumberFormatException e) {
-			System.out.println("数字以外が入力されました");
-			
+
+				System.out.println("全ての問題が終わりました。");
+				System.out.println("あなたの得点は・・・" + score + "点です！");
+			}
+
 		}
-
-		System.out.println("全ての問題が終わりました。");
-		System.out.println("あなたの得点は・・・" + score + "点です！");
-
-		break;
 	}
-
 }
-	}}
-////static int inputNum(String message, Scanner n) {
-//while(true) {
-//    System.out.println(message);
-//    try {
-//        int m = Integer.parseInt(n.nextLine());
-//        if(0 < m && m <= 9999) {
-//            return m;
-//        }
-//    }
-//    catch(NumberFormatException e) {}
-//}
-//}
