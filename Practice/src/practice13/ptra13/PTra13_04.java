@@ -20,7 +20,8 @@ public class PTra13_04 {
 		// ★ HeroインスタンスとSlimeインスタンスを作成し、それぞれの名前に"勇者", "スライム"を設定してください
 		Hero hero=new Hero();
 		Slime slime=new Slime();
-
+		 hero.setName("勇者");
+		 slime.setName("スライム");
 		/*
 		 * ★ HeroとSlimeを、どちらかが体力０になるまで戦わせます
 		 *
@@ -35,12 +36,12 @@ public class PTra13_04 {
 		// ★ 勝利した方の出力を行ってください。「○○は■■との戦闘に勝利した」
 
 			if(slime.damage(heroattack)) {//スライムのダメは勇者の引数
-				System.out.println("勇者はスライムとの戦闘に勝利した");
+				System.out.println(hero.getName()+"は"+slime.getName()+"との戦闘に勝利した");
 				break;
 			}
 
 			if(hero.damage(slimeattack)) {//勇者のダメはスライムの引数
-				System.out.println("スライムは勇者との戦闘に勝利した");
+				System.out.println(slime.getName()+"は"+hero.getName()+"との戦闘に勝利した");
 				break;
 				}
 			}

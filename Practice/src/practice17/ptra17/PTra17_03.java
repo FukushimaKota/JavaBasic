@@ -35,36 +35,67 @@ public class PTra17_03 {
 		 *
 		 */
 
-		for (int i = 0; i < question.length; i++) {//3問終わるまで。
 
-			while (true) {//正しくなるまで。
-				System.out.println("問題：" + (i + 1));
-				System.out.println(question[i]);
+for (int i = 0; i < question.length; i++) {
+	System.out.println("問題：" + (i + 1));
+	System.out.println(question[i]);
 
-				try {//errorが出る範囲で囲えば良い
+	int num = -1;
+	while (true) {
+		System.out.println("回答を数字で入力してください");
+		try {
+			String input = ThrowExceptionUtil.inputValue();
+			num = Integer.parseInt(input);
 
-					System.out.println("回答を数字で入力してください");
-					String input = ThrowExceptionUtil.inputValue();//文字の時Error
-
-					int num = Integer.parseInt(input);
-
-					if (answer[i] == num) {
-						score++;
-
-					}break;//ここで止める
-					
-
-				} catch (IOException e) {//Error時の処理
-					System.out.println("例外が発生しました");
-				} catch (NumberFormatException e) {
-					System.out.println("数字以外が入力されました");
-
-				}
-
-				System.out.println("全ての問題が終わりました。");
-				System.out.println("あなたの得点は・・・" + score + "点です！");
-			}
-
+		} catch(IOException e) {
+			System.out.println("例外が発生しました");
+			continue;
+		} catch(NumberFormatException e) {
+			System.out.println("数字以外が入力されました");
+			continue;
 		}
+		break;
+	}
+
+	if (answer[i] == num) {
+		score++;
 	}
 }
+
+System.out.println("全ての問題が終わりました。");
+System.out.println("あなたの得点は・・・" + score + "点です！");}}
+
+//
+//		for (int i = 0; i < question.length; i++) {//3問終わるまで。
+//
+//			while (true) {//正しくなるまで。
+//				System.out.println("問題：" + (i + 1));
+//				System.out.println(question[i]);
+//
+//				try {//errorが出る範囲で囲えば良い
+//
+//					System.out.println("回答を数字で入力してください");
+//					String input = ThrowExceptionUtil.inputValue();//文字の時Error
+//
+//					int num = Integer.parseInt(input);
+//
+//					if (answer[i] == num) {
+//						score++;
+//
+//					}break;//ここで止める
+//
+//
+//				} catch (IOException e) {//Error時の処理
+//					System.out.println("例外が発生しました");
+//				} catch (NumberFormatException e) {
+//					System.out.println("数字以外が入力されました");
+//
+//				}
+//
+//				System.out.println("全ての問題が終わりました。");
+//				System.out.println("あなたの得点は・・・" + score + "点です！");
+//			}
+//
+//		}
+//	}
+//}
